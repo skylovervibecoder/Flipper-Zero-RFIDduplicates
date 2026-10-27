@@ -1,0 +1,16 @@
+App(
+    appid="rfid_duplicates",
+    name="RFIDduplicates",
+    apptype=FlipperAppType.EXTERNAL,
+    entry_point="rfid_duplicates_app",
+    requires=[
+        "gui",
+        "storage",
+    ],
+    stack_size=4 * 1024,
+    fap_category="RFID",
+    fap_icon="icon.png",
+    fap_author="Marcopiiit",
+    fap_version="1.0",
+    fap_description="Reads a 125 kHz RFID tag, tells if it is saved, and finds duplicate saved tags.",
+)
